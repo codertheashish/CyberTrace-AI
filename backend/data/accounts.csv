@@ -1,0 +1,501 @@
+account_id,account_type,is_mule,city,state,account_age_days,linked_devices,preferred_location_id
+ACC00000,Mule/Suspicious,True,Bengaluru,Karnataka,66,5,ATM-DEL-011
+ACC00001,Mule/Suspicious,True,Jaipur,Rajasthan,169,6,ATM-PAT-003
+ACC00002,Mule/Suspicious,True,Kanpur,Uttar Pradesh,142,6,ATM-PAT-008
+ACC00003,Mule/Suspicious,True,Hyderabad,Telangana,57,8,ATM-DEL-004
+ACC00004,Mule/Suspicious,True,Lucknow,Uttar Pradesh,173,3,ATM-BEN-001
+ACC00005,Mule/Suspicious,True,Patna,Bihar,5,8,ATM-DEL-013
+ACC00006,Mule/Suspicious,True,Kanpur,Uttar Pradesh,52,8,ATM-DEL-000
+ACC00007,Mule/Suspicious,True,Lucknow,Uttar Pradesh,40,7,ATM-LUC-005
+ACC00008,Mule/Suspicious,True,Mumbai,Maharashtra,20,3,ATM-DEL-010
+ACC00009,Mule/Suspicious,True,Kanpur,Uttar Pradesh,6,8,ATM-DEL-002
+ACC00010,Mule/Suspicious,True,Hyderabad,Telangana,28,6,ATM-PAT-008
+ACC00011,Mule/Suspicious,True,Patna,Bihar,32,5,ATM-PAT-008
+ACC00012,Mule/Suspicious,True,Lucknow,Uttar Pradesh,69,3,ATM-BEN-001
+ACC00013,Mule/Suspicious,True,Delhi,Delhi,51,5,ATM-KAN-014
+ACC00014,Mule/Suspicious,True,Mumbai,Maharashtra,32,8,ATM-PAT-008
+ACC00015,Mule/Suspicious,True,Lucknow,Uttar Pradesh,21,8,ATM-DEL-013
+ACC00016,Mule/Suspicious,True,Jaipur,Rajasthan,236,5,ATM-MUM-009
+ACC00017,Mule/Suspicious,True,Mumbai,Maharashtra,138,5,ATM-PAT-006
+ACC00018,Mule/Suspicious,True,Mumbai,Maharashtra,39,7,ATM-DEL-000
+ACC00019,Mule/Suspicious,True,Kanpur,Uttar Pradesh,46,6,ATM-LUC-005
+ACC00020,Mule/Suspicious,True,Lucknow,Uttar Pradesh,71,3,ATM-KAN-014
+ACC00021,Mule/Suspicious,True,Jaipur,Rajasthan,18,7,ATM-PAT-003
+ACC00022,Mule/Suspicious,True,Bengaluru,Karnataka,46,6,ATM-DEL-010
+ACC00023,Mule/Suspicious,True,Delhi,Delhi,6,3,ATM-LUC-005
+ACC00024,Mule/Suspicious,True,Patna,Bihar,7,6,ATM-MUM-009
+ACC00025,Mule/Suspicious,True,Mumbai,Maharashtra,174,7,ATM-KAN-014
+ACC00026,Mule/Suspicious,True,Bengaluru,Karnataka,24,8,ATM-DEL-013
+ACC00027,Mule/Suspicious,True,Mumbai,Maharashtra,32,3,ATM-KAN-012
+ACC00028,Mule/Suspicious,True,Mumbai,Maharashtra,188,7,ATM-KAN-014
+ACC00029,Mule/Suspicious,True,Patna,Bihar,38,7,ATM-DEL-000
+ACC00030,Mule/Suspicious,True,Mumbai,Maharashtra,55,6,ATM-DEL-011
+ACC00031,Mule/Suspicious,True,Jaipur,Rajasthan,120,7,ATM-KAN-012
+ACC00032,Mule/Suspicious,True,Patna,Bihar,34,3,ATM-KAN-012
+ACC00033,Mule/Suspicious,True,Bengaluru,Karnataka,27,4,ATM-DEL-004
+ACC00034,Mule/Suspicious,True,Mumbai,Maharashtra,53,8,ATM-KAN-012
+ACC00035,Mule/Suspicious,True,Delhi,Delhi,76,8,ATM-PAT-006
+ACC00036,Mule/Suspicious,True,Lucknow,Uttar Pradesh,11,8,ATM-DEL-013
+ACC00037,Mule/Suspicious,True,Hyderabad,Telangana,31,5,ATM-PAT-003
+ACC00038,Mule/Suspicious,True,Bengaluru,Karnataka,25,4,ATM-DEL-013
+ACC00039,Mule/Suspicious,True,Hyderabad,Telangana,86,3,ATM-LUC-005
+ACC00040,Mule/Suspicious,True,Kanpur,Uttar Pradesh,13,8,ATM-DEL-013
+ACC00041,Mule/Suspicious,True,Bengaluru,Karnataka,31,7,ATM-PAT-003
+ACC00042,Mule/Suspicious,True,Lucknow,Uttar Pradesh,26,4,ATM-DEL-010
+ACC00043,Mule/Suspicious,True,Bengaluru,Karnataka,104,3,ATM-PAT-006
+ACC00044,Mule/Suspicious,True,Jaipur,Rajasthan,61,6,ATM-DEL-004
+ACC00045,Mule/Suspicious,True,Delhi,Delhi,47,3,ATM-KAN-012
+ACC00046,Mule/Suspicious,True,Kanpur,Uttar Pradesh,64,6,ATM-LUC-005
+ACC00047,Mule/Suspicious,True,Patna,Bihar,67,8,ATM-DEL-010
+ACC00048,Mule/Suspicious,True,Jaipur,Rajasthan,100,6,ATM-DEL-000
+ACC00049,Mule/Suspicious,True,Delhi,Delhi,135,6,ATM-KAN-014
+ACC00050,Mule/Suspicious,True,Kanpur,Uttar Pradesh,56,8,ATM-DEL-002
+ACC00051,Mule/Suspicious,True,Kanpur,Uttar Pradesh,28,4,ATM-DEL-000
+ACC00052,Mule/Suspicious,True,Delhi,Delhi,51,7,ATM-MUM-009
+ACC00053,Mule/Suspicious,True,Patna,Bihar,114,4,ATM-LUC-005
+ACC00054,Mule/Suspicious,True,Jaipur,Rajasthan,6,6,ATM-PAT-006
+ACC00055,Mule/Suspicious,True,Delhi,Delhi,7,8,ATM-PAT-006
+ACC00056,Mule/Suspicious,True,Bengaluru,Karnataka,51,7,ATM-DEL-004
+ACC00057,Mule/Suspicious,True,Lucknow,Uttar Pradesh,49,7,ATM-DEL-011
+ACC00058,Mule/Suspicious,True,Patna,Bihar,24,6,ATM-DEL-000
+ACC00059,Mule/Suspicious,True,Bengaluru,Karnataka,63,6,ATM-LUC-005
+ACC00060,Mule/Suspicious,True,Patna,Bihar,115,6,ATM-BEN-001
+ACC00061,Mule/Suspicious,True,Jaipur,Rajasthan,36,5,ATM-MUM-009
+ACC00062,Mule/Suspicious,True,Jaipur,Rajasthan,65,6,ATM-DEL-010
+ACC00063,Mule/Suspicious,True,Delhi,Delhi,13,4,ATM-DEL-011
+ACC00064,Mule/Suspicious,True,Kanpur,Uttar Pradesh,48,8,ATM-PAT-008
+ACC00065,Mule/Suspicious,True,Kanpur,Uttar Pradesh,7,5,ATM-DEL-010
+ACC00066,Mule/Suspicious,True,Patna,Bihar,39,4,ATM-LUC-005
+ACC00067,Mule/Suspicious,True,Patna,Bihar,6,7,ATM-DEL-011
+ACC00068,Mule/Suspicious,True,Kanpur,Uttar Pradesh,10,3,ATM-PAT-008
+ACC00069,Mule/Suspicious,True,Mumbai,Maharashtra,74,3,ATM-PAT-003
+ACC00070,Mule/Suspicious,True,Patna,Bihar,16,3,ATM-DEL-010
+ACC00071,Mule/Suspicious,True,Patna,Bihar,40,8,ATM-DEL-010
+ACC00072,Mule/Suspicious,True,Mumbai,Maharashtra,10,3,ATM-MUM-009
+ACC00073,Mule/Suspicious,True,Kanpur,Uttar Pradesh,69,7,ATM-PAT-006
+ACC00074,Mule/Suspicious,True,Lucknow,Uttar Pradesh,66,7,ATM-DEL-004
+ACC00075,Mule/Suspicious,True,Kanpur,Uttar Pradesh,85,7,ATM-PAT-003
+ACC00076,Mule/Suspicious,True,Patna,Bihar,61,5,ATM-KAN-012
+ACC00077,Mule/Suspicious,True,Jaipur,Rajasthan,22,5,ATM-KAN-007
+ACC00078,Mule/Suspicious,True,Hyderabad,Telangana,90,3,ATM-KAN-007
+ACC00079,Mule/Suspicious,True,Bengaluru,Karnataka,30,6,ATM-PAT-008
+ACC00080,Mule/Suspicious,True,Hyderabad,Telangana,7,3,ATM-KAN-012
+ACC00081,Mule/Suspicious,True,Mumbai,Maharashtra,27,8,ATM-DEL-010
+ACC00082,Mule/Suspicious,True,Delhi,Delhi,77,6,ATM-DEL-004
+ACC00083,Mule/Suspicious,True,Jaipur,Rajasthan,6,4,ATM-BEN-001
+ACC00084,Mule/Suspicious,True,Bengaluru,Karnataka,45,6,ATM-DEL-010
+ACC00085,Mule/Suspicious,True,Kanpur,Uttar Pradesh,16,8,ATM-PAT-003
+ACC00086,Mule/Suspicious,True,Bengaluru,Karnataka,67,4,ATM-DEL-002
+ACC00087,Mule/Suspicious,True,Lucknow,Uttar Pradesh,62,7,ATM-DEL-000
+ACC00088,Mule/Suspicious,True,Bengaluru,Karnataka,135,6,ATM-KAN-007
+ACC00089,Mule/Suspicious,True,Delhi,Delhi,33,4,ATM-KAN-007
+ACC00090,Mule/Suspicious,True,Patna,Bihar,167,3,ATM-KAN-014
+ACC00091,Mule/Suspicious,True,Bengaluru,Karnataka,51,7,ATM-DEL-011
+ACC00092,Mule/Suspicious,True,Patna,Bihar,15,4,ATM-KAN-007
+ACC00093,Mule/Suspicious,True,Patna,Bihar,6,5,ATM-PAT-003
+ACC00094,Mule/Suspicious,True,Mumbai,Maharashtra,101,6,ATM-DEL-010
+ACC00095,Mule/Suspicious,True,Lucknow,Uttar Pradesh,34,6,ATM-KAN-014
+ACC00096,Mule/Suspicious,True,Delhi,Delhi,13,7,ATM-KAN-012
+ACC00097,Mule/Suspicious,True,Patna,Bihar,52,7,ATM-PAT-003
+ACC00098,Mule/Suspicious,True,Mumbai,Maharashtra,64,3,ATM-KAN-012
+ACC00099,Mule/Suspicious,True,Hyderabad,Telangana,199,4,ATM-DEL-000
+ACC00100,Regular,False,Bengaluru,Karnataka,762,1,ATM-BEN-015
+ACC00101,Regular,False,Hyderabad,Telangana,375,1,ATM-BEN-017
+ACC00102,Regular,False,Hyderabad,Telangana,1243,1,ATM-BEN-085
+ACC00103,Regular,False,Jaipur,Rajasthan,446,1,ATM-KAN-096
+ACC00104,Regular,False,Hyderabad,Telangana,1129,2,ATM-MUM-078
+ACC00105,Regular,False,Patna,Bihar,1079,2,ATM-DEL-070
+ACC00106,Regular,False,Hyderabad,Telangana,2102,2,ATM-BEN-020
+ACC00107,Regular,False,Hyderabad,Telangana,2476,1,ATM-BEN-057
+ACC00108,Regular,False,Kanpur,Uttar Pradesh,1578,2,ATM-KAN-096
+ACC00109,Regular,False,Bengaluru,Karnataka,2144,1,ATM-HYD-081
+ACC00110,Regular,False,Kanpur,Uttar Pradesh,2821,2,ATM-KAN-098
+ACC00111,Regular,False,Hyderabad,Telangana,2252,1,ATM-JAI-080
+ACC00112,Regular,False,Bengaluru,Karnataka,2908,2,ATM-DEL-035
+ACC00113,Regular,False,Hyderabad,Telangana,680,1,ATM-MUM-009
+ACC00114,Regular,False,Kanpur,Uttar Pradesh,1783,1,ATM-KAN-030
+ACC00115,Regular,False,Kanpur,Uttar Pradesh,2973,2,ATM-MUM-042
+ACC00116,Regular,False,Jaipur,Rajasthan,540,1,ATM-KAN-069
+ACC00117,Regular,False,Delhi,Delhi,2369,2,ATM-BEN-017
+ACC00118,Regular,False,Mumbai,Maharashtra,2625,2,ATM-KAN-029
+ACC00119,Regular,False,Patna,Bihar,2600,1,ATM-BEN-088
+ACC00120,Regular,False,Mumbai,Maharashtra,2097,1,ATM-JAI-090
+ACC00121,Regular,False,Bengaluru,Karnataka,2307,1,ATM-PAT-008
+ACC00122,Regular,False,Patna,Bihar,1245,1,ATM-HYD-052
+ACC00123,Regular,False,Jaipur,Rajasthan,1604,2,ATM-KAN-069
+ACC00124,Regular,False,Hyderabad,Telangana,1278,1,ATM-DEL-053
+ACC00125,Regular,False,Lucknow,Uttar Pradesh,2705,1,ATM-KAN-026
+ACC00126,Regular,False,Patna,Bihar,330,1,ATM-MUM-049
+ACC00127,Regular,False,Lucknow,Uttar Pradesh,2733,2,ATM-KAN-097
+ACC00128,Regular,False,Patna,Bihar,1180,2,ATM-BEN-061
+ACC00129,Regular,False,Lucknow,Uttar Pradesh,2859,2,ATM-JAI-045
+ACC00130,Regular,False,Kanpur,Uttar Pradesh,1540,2,ATM-KAN-096
+ACC00131,Regular,False,Patna,Bihar,1961,1,ATM-DEL-053
+ACC00132,Regular,False,Bengaluru,Karnataka,438,2,ATM-BEN-062
+ACC00133,Regular,False,Bengaluru,Karnataka,1106,1,ATM-MUM-034
+ACC00134,Regular,False,Patna,Bihar,779,1,ATM-BEN-062
+ACC00135,Regular,False,Lucknow,Uttar Pradesh,2412,1,ATM-MUM-049
+ACC00136,Regular,False,Jaipur,Rajasthan,499,1,ATM-BEN-085
+ACC00137,Regular,False,Patna,Bihar,1574,1,ATM-DEL-092
+ACC00138,Regular,False,Mumbai,Maharashtra,2988,2,ATM-KAN-059
+ACC00139,Regular,False,Mumbai,Maharashtra,1425,1,ATM-BEN-079
+ACC00140,Regular,False,Lucknow,Uttar Pradesh,1719,1,ATM-BEN-050
+ACC00141,Regular,False,Lucknow,Uttar Pradesh,510,2,ATM-DEL-010
+ACC00142,Regular,False,Patna,Bihar,2120,2,ATM-BEN-017
+ACC00143,Regular,False,Hyderabad,Telangana,1923,1,ATM-KAN-023
+ACC00144,Regular,False,Lucknow,Uttar Pradesh,2544,2,ATM-DEL-033
+ACC00145,Regular,False,Patna,Bihar,2156,2,ATM-DEL-041
+ACC00146,Regular,False,Bengaluru,Karnataka,1298,1,ATM-JAI-058
+ACC00147,Regular,False,Jaipur,Rajasthan,2171,1,ATM-LUC-043
+ACC00148,Regular,False,Patna,Bihar,1627,2,ATM-DEL-035
+ACC00149,Regular,False,Patna,Bihar,2962,2,ATM-MUM-032
+ACC00150,Regular,False,Delhi,Delhi,2614,2,ATM-MUM-060
+ACC00151,Regular,False,Lucknow,Uttar Pradesh,2472,1,ATM-KAN-095
+ACC00152,Regular,False,Lucknow,Uttar Pradesh,2739,1,ATM-HYD-044
+ACC00153,Regular,False,Bengaluru,Karnataka,2304,2,ATM-MUM-083
+ACC00154,Regular,False,Delhi,Delhi,2177,1,ATM-MUM-099
+ACC00155,Regular,False,Lucknow,Uttar Pradesh,2371,2,ATM-KAN-096
+ACC00156,Regular,False,Lucknow,Uttar Pradesh,2168,2,ATM-PAT-031
+ACC00157,Regular,False,Bengaluru,Karnataka,2735,1,ATM-DEL-002
+ACC00158,Regular,False,Mumbai,Maharashtra,1405,1,ATM-KAN-030
+ACC00159,Regular,False,Mumbai,Maharashtra,212,2,ATM-MUM-060
+ACC00160,Regular,False,Delhi,Delhi,1791,2,ATM-DEL-072
+ACC00161,Regular,False,Bengaluru,Karnataka,515,1,ATM-KAN-059
+ACC00162,Regular,False,Kanpur,Uttar Pradesh,2500,1,ATM-KAN-098
+ACC00163,Regular,False,Jaipur,Rajasthan,2283,1,ATM-MUM-021
+ACC00164,Regular,False,Delhi,Delhi,849,1,ATM-MUM-099
+ACC00165,Regular,False,Mumbai,Maharashtra,1237,1,ATM-PAT-039
+ACC00166,Regular,False,Delhi,Delhi,413,1,ATM-BEN-074
+ACC00167,Regular,False,Lucknow,Uttar Pradesh,810,2,ATM-PAT-039
+ACC00168,Regular,False,Patna,Bihar,2441,1,ATM-BEN-050
+ACC00169,Regular,False,Bengaluru,Karnataka,2915,1,ATM-MUM-009
+ACC00170,Regular,False,Bengaluru,Karnataka,1089,2,ATM-DEL-013
+ACC00171,Regular,False,Kanpur,Uttar Pradesh,1668,1,ATM-KAN-087
+ACC00172,Regular,False,Delhi,Delhi,2771,2,ATM-DEL-072
+ACC00173,Regular,False,Lucknow,Uttar Pradesh,1741,2,ATM-HYD-044
+ACC00174,Regular,False,Patna,Bihar,392,1,ATM-BEN-084
+ACC00175,Regular,False,Jaipur,Rajasthan,1954,2,ATM-PAT-008
+ACC00176,Regular,False,Jaipur,Rajasthan,1010,1,ATM-BEN-001
+ACC00177,Regular,False,Patna,Bihar,1949,2,ATM-BEN-062
+ACC00178,Regular,False,Delhi,Delhi,1263,1,ATM-BEN-055
+ACC00179,Regular,False,Jaipur,Rajasthan,308,2,ATM-HYD-081
+ACC00180,Regular,False,Hyderabad,Telangana,2883,2,ATM-JAI-090
+ACC00181,Regular,False,Mumbai,Maharashtra,2690,2,ATM-BEN-055
+ACC00182,Regular,False,Mumbai,Maharashtra,481,1,ATM-KAN-093
+ACC00183,Regular,False,Kanpur,Uttar Pradesh,962,2,ATM-MUM-078
+ACC00184,Regular,False,Hyderabad,Telangana,2004,2,ATM-KAN-059
+ACC00185,Regular,False,Patna,Bihar,1176,2,ATM-KAN-093
+ACC00186,Regular,False,Kanpur,Uttar Pradesh,929,1,ATM-DEL-041
+ACC00187,Regular,False,Bengaluru,Karnataka,2927,2,ATM-DEL-011
+ACC00188,Regular,False,Kanpur,Uttar Pradesh,1458,1,ATM-BEN-057
+ACC00189,Regular,False,Bengaluru,Karnataka,1691,1,ATM-KAN-096
+ACC00190,Regular,False,Hyderabad,Telangana,1339,1,ATM-DEL-072
+ACC00191,Regular,False,Patna,Bihar,2110,1,ATM-LUC-043
+ACC00192,Regular,False,Lucknow,Uttar Pradesh,555,1,ATM-PAT-063
+ACC00193,Regular,False,Jaipur,Rajasthan,2499,2,ATM-KAN-023
+ACC00194,Regular,False,Hyderabad,Telangana,1354,1,ATM-JAI-027
+ACC00195,Regular,False,Jaipur,Rajasthan,1909,2,ATM-DEL-033
+ACC00196,Regular,False,Jaipur,Rajasthan,413,2,ATM-DEL-035
+ACC00197,Regular,False,Kanpur,Uttar Pradesh,2622,1,ATM-LUC-071
+ACC00198,Regular,False,Lucknow,Uttar Pradesh,644,2,ATM-JAI-066
+ACC00199,Regular,False,Bengaluru,Karnataka,1241,1,ATM-DEL-010
+ACC00200,Regular,False,Bengaluru,Karnataka,1534,1,ATM-DEL-092
+ACC00201,Regular,False,Patna,Bihar,604,1,ATM-BEN-062
+ACC00202,Regular,False,Bengaluru,Karnataka,2293,1,ATM-BEN-088
+ACC00203,Regular,False,Hyderabad,Telangana,2915,1,ATM-LUC-082
+ACC00204,Regular,False,Hyderabad,Telangana,1784,1,ATM-BEN-057
+ACC00205,Regular,False,Lucknow,Uttar Pradesh,1501,1,ATM-DEL-011
+ACC00206,Regular,False,Kanpur,Uttar Pradesh,557,1,ATM-PAT-028
+ACC00207,Regular,False,Patna,Bihar,338,2,ATM-BEN-088
+ACC00208,Regular,False,Bengaluru,Karnataka,2130,1,ATM-PAT-039
+ACC00209,Regular,False,Jaipur,Rajasthan,2999,2,ATM-MUM-060
+ACC00210,Regular,False,Jaipur,Rajasthan,2755,1,ATM-DEL-054
+ACC00211,Regular,False,Jaipur,Rajasthan,2348,1,ATM-JAI-045
+ACC00212,Regular,False,Hyderabad,Telangana,2314,1,ATM-MUM-034
+ACC00213,Regular,False,Kanpur,Uttar Pradesh,877,2,ATM-MUM-032
+ACC00214,Regular,False,Bengaluru,Karnataka,758,1,ATM-BEN-015
+ACC00215,Regular,False,Bengaluru,Karnataka,2870,1,ATM-LUC-040
+ACC00216,Regular,False,Delhi,Delhi,764,1,ATM-KAN-095
+ACC00217,Regular,False,Mumbai,Maharashtra,2074,2,ATM-JAI-024
+ACC00218,Regular,False,Bengaluru,Karnataka,312,1,ATM-DEL-094
+ACC00219,Regular,False,Hyderabad,Telangana,500,2,ATM-DEL-035
+ACC00220,Regular,False,Kanpur,Uttar Pradesh,1584,2,ATM-KAN-012
+ACC00221,Regular,False,Bengaluru,Karnataka,2357,1,ATM-LUC-037
+ACC00222,Regular,False,Bengaluru,Karnataka,1047,1,ATM-LUC-046
+ACC00223,Regular,False,Mumbai,Maharashtra,1736,1,ATM-JAI-038
+ACC00224,Regular,False,Lucknow,Uttar Pradesh,429,1,ATM-JAI-090
+ACC00225,Regular,False,Mumbai,Maharashtra,1317,2,ATM-DEL-035
+ACC00226,Regular,False,Lucknow,Uttar Pradesh,1533,1,ATM-PAT-006
+ACC00227,Regular,False,Kanpur,Uttar Pradesh,2309,1,ATM-MUM-089
+ACC00228,Regular,False,Mumbai,Maharashtra,1982,1,ATM-HYD-081
+ACC00229,Regular,False,Hyderabad,Telangana,780,2,ATM-DEL-013
+ACC00230,Regular,False,Lucknow,Uttar Pradesh,1920,2,ATM-PAT-073
+ACC00231,Regular,False,Kanpur,Uttar Pradesh,1168,2,ATM-MUM-060
+ACC00232,Regular,False,Hyderabad,Telangana,1975,1,ATM-LUC-056
+ACC00233,Regular,False,Jaipur,Rajasthan,1413,1,ATM-KAN-023
+ACC00234,Regular,False,Lucknow,Uttar Pradesh,2228,1,ATM-MUM-032
+ACC00235,Regular,False,Hyderabad,Telangana,1629,2,ATM-KAN-014
+ACC00236,Regular,False,Delhi,Delhi,2747,2,ATM-KAN-051
+ACC00237,Regular,False,Hyderabad,Telangana,1934,1,ATM-MUM-009
+ACC00238,Regular,False,Lucknow,Uttar Pradesh,2147,1,ATM-MUM-019
+ACC00239,Regular,False,Mumbai,Maharashtra,594,2,ATM-DEL-072
+ACC00240,Regular,False,Kanpur,Uttar Pradesh,2554,1,ATM-DEL-010
+ACC00241,Regular,False,Bengaluru,Karnataka,908,2,ATM-BEN-015
+ACC00242,Regular,False,Patna,Bihar,309,2,ATM-KAN-077
+ACC00243,Regular,False,Bengaluru,Karnataka,1569,1,ATM-MUM-099
+ACC00244,Regular,False,Patna,Bihar,769,1,ATM-BEN-057
+ACC00245,Regular,False,Hyderabad,Telangana,857,1,ATM-JAI-038
+ACC00246,Regular,False,Patna,Bihar,1695,1,ATM-PAT-039
+ACC00247,Regular,False,Lucknow,Uttar Pradesh,541,1,ATM-MUM-078
+ACC00248,Regular,False,Delhi,Delhi,1308,2,ATM-KAN-097
+ACC00249,Regular,False,Bengaluru,Karnataka,1987,2,ATM-JAI-080
+ACC00250,Regular,False,Bengaluru,Karnataka,2144,1,ATM-DEL-033
+ACC00251,Regular,False,Delhi,Delhi,2708,1,ATM-BEN-020
+ACC00252,Regular,False,Bengaluru,Karnataka,1632,2,ATM-MUM-022
+ACC00253,Regular,False,Delhi,Delhi,665,2,ATM-BEN-020
+ACC00254,Regular,False,Lucknow,Uttar Pradesh,811,1,ATM-HYD-052
+ACC00255,Regular,False,Hyderabad,Telangana,656,2,ATM-BEN-088
+ACC00256,Regular,False,Hyderabad,Telangana,1160,2,ATM-LUC-037
+ACC00257,Regular,False,Lucknow,Uttar Pradesh,430,1,ATM-KAN-029
+ACC00258,Regular,False,Kanpur,Uttar Pradesh,1687,2,ATM-JAI-090
+ACC00259,Regular,False,Kanpur,Uttar Pradesh,761,2,ATM-MUM-089
+ACC00260,Regular,False,Hyderabad,Telangana,543,2,ATM-MUM-009
+ACC00261,Regular,False,Bengaluru,Karnataka,2126,1,ATM-DEL-033
+ACC00262,Regular,False,Bengaluru,Karnataka,440,1,ATM-DEL-054
+ACC00263,Regular,False,Delhi,Delhi,1950,1,ATM-KAN-069
+ACC00264,Regular,False,Bengaluru,Karnataka,1622,1,ATM-LUC-082
+ACC00265,Regular,False,Mumbai,Maharashtra,2776,1,ATM-MUM-034
+ACC00266,Regular,False,Mumbai,Maharashtra,187,2,ATM-MUM-009
+ACC00267,Regular,False,Lucknow,Uttar Pradesh,2453,1,ATM-MUM-021
+ACC00268,Regular,False,Kanpur,Uttar Pradesh,1864,2,ATM-PAT-076
+ACC00269,Regular,False,Kanpur,Uttar Pradesh,770,1,ATM-LUC-056
+ACC00270,Regular,False,Delhi,Delhi,2785,2,ATM-KAN-059
+ACC00271,Regular,False,Kanpur,Uttar Pradesh,1923,1,ATM-MUM-089
+ACC00272,Regular,False,Patna,Bihar,1678,2,ATM-MUM-034
+ACC00273,Regular,False,Hyderabad,Telangana,2287,2,ATM-LUC-056
+ACC00274,Regular,False,Delhi,Delhi,596,1,ATM-PAT-076
+ACC00275,Regular,False,Lucknow,Uttar Pradesh,2191,1,ATM-BEN-055
+ACC00276,Regular,False,Jaipur,Rajasthan,2561,1,ATM-KAN-077
+ACC00277,Regular,False,Kanpur,Uttar Pradesh,1680,1,ATM-PAT-003
+ACC00278,Regular,False,Delhi,Delhi,2625,2,ATM-KAN-029
+ACC00279,Regular,False,Lucknow,Uttar Pradesh,1681,1,ATM-KAN-097
+ACC00280,Regular,False,Kanpur,Uttar Pradesh,475,1,ATM-PAT-073
+ACC00281,Regular,False,Lucknow,Uttar Pradesh,1243,2,ATM-KAN-097
+ACC00282,Regular,False,Mumbai,Maharashtra,1770,1,ATM-MUM-060
+ACC00283,Regular,False,Hyderabad,Telangana,776,2,ATM-DEL-035
+ACC00284,Regular,False,Mumbai,Maharashtra,1689,1,ATM-BEN-074
+ACC00285,Regular,False,Patna,Bihar,2691,2,ATM-HYD-081
+ACC00286,Regular,False,Hyderabad,Telangana,1516,2,ATM-DEL-011
+ACC00287,Regular,False,Hyderabad,Telangana,2405,1,ATM-HYD-044
+ACC00288,Regular,False,Patna,Bihar,1532,2,ATM-MUM-042
+ACC00289,Regular,False,Jaipur,Rajasthan,1694,2,ATM-BEN-085
+ACC00290,Regular,False,Delhi,Delhi,1752,2,ATM-BEN-020
+ACC00291,Regular,False,Jaipur,Rajasthan,1397,1,ATM-HYD-052
+ACC00292,Regular,False,Hyderabad,Telangana,1248,1,ATM-HYD-036
+ACC00293,Regular,False,Patna,Bihar,1203,2,ATM-KAN-097
+ACC00294,Regular,False,Lucknow,Uttar Pradesh,1893,1,ATM-JAI-058
+ACC00295,Regular,False,Delhi,Delhi,1184,1,ATM-LUC-040
+ACC00296,Regular,False,Kanpur,Uttar Pradesh,1111,1,ATM-DEL-041
+ACC00297,Regular,False,Delhi,Delhi,848,2,ATM-KAN-098
+ACC00298,Regular,False,Patna,Bihar,815,2,ATM-DEL-065
+ACC00299,Regular,False,Lucknow,Uttar Pradesh,873,2,ATM-BEN-084
+ACC00300,Regular,False,Hyderabad,Telangana,2579,2,ATM-HYD-052
+ACC00301,Regular,False,Lucknow,Uttar Pradesh,983,1,ATM-JAI-024
+ACC00302,Regular,False,Jaipur,Rajasthan,336,1,ATM-BEN-079
+ACC00303,Regular,False,Hyderabad,Telangana,406,1,ATM-JAI-080
+ACC00304,Regular,False,Hyderabad,Telangana,231,1,ATM-KAN-097
+ACC00305,Regular,False,Lucknow,Uttar Pradesh,2950,1,ATM-KAN-026
+ACC00306,Regular,False,Kanpur,Uttar Pradesh,2708,2,ATM-DEL-070
+ACC00307,Regular,False,Mumbai,Maharashtra,2913,2,ATM-HYD-036
+ACC00308,Regular,False,Hyderabad,Telangana,194,2,ATM-MUM-089
+ACC00309,Regular,False,Hyderabad,Telangana,907,2,ATM-BEN-015
+ACC00310,Regular,False,Lucknow,Uttar Pradesh,2218,2,ATM-JAI-080
+ACC00311,Regular,False,Bengaluru,Karnataka,2800,1,ATM-JAI-090
+ACC00312,Regular,False,Mumbai,Maharashtra,1688,2,ATM-PAT-039
+ACC00313,Regular,False,Lucknow,Uttar Pradesh,969,2,ATM-DEL-070
+ACC00314,Regular,False,Patna,Bihar,758,2,ATM-DEL-011
+ACC00315,Regular,False,Bengaluru,Karnataka,1092,1,ATM-KAN-014
+ACC00316,Regular,False,Hyderabad,Telangana,742,2,ATM-BEN-015
+ACC00317,Regular,False,Mumbai,Maharashtra,863,1,ATM-PAT-063
+ACC00318,Regular,False,Kanpur,Uttar Pradesh,2174,2,ATM-DEL-065
+ACC00319,Regular,False,Kanpur,Uttar Pradesh,993,1,ATM-DEL-053
+ACC00320,Regular,False,Hyderabad,Telangana,1607,1,ATM-MUM-060
+ACC00321,Regular,False,Bengaluru,Karnataka,1536,1,ATM-JAI-058
+ACC00322,Regular,False,Mumbai,Maharashtra,1854,2,ATM-MUM-049
+ACC00323,Regular,False,Bengaluru,Karnataka,1129,2,ATM-PAT-076
+ACC00324,Regular,False,Mumbai,Maharashtra,1727,2,ATM-PAT-008
+ACC00325,Regular,False,Kanpur,Uttar Pradesh,2971,1,ATM-KAN-098
+ACC00326,Regular,False,Patna,Bihar,2110,2,ATM-LUC-043
+ACC00327,Regular,False,Kanpur,Uttar Pradesh,898,1,ATM-DEL-000
+ACC00328,Regular,False,Kanpur,Uttar Pradesh,187,1,ATM-DEL-092
+ACC00329,Regular,False,Kanpur,Uttar Pradesh,1859,2,ATM-MUM-075
+ACC00330,Regular,False,Hyderabad,Telangana,1889,1,ATM-MUM-019
+ACC00331,Regular,False,Hyderabad,Telangana,1163,1,ATM-MUM-068
+ACC00332,Regular,False,Hyderabad,Telangana,2579,2,ATM-HYD-044
+ACC00333,Regular,False,Jaipur,Rajasthan,2901,2,ATM-DEL-070
+ACC00334,Regular,False,Patna,Bihar,2810,1,ATM-JAI-058
+ACC00335,Regular,False,Jaipur,Rajasthan,2826,2,ATM-JAI-024
+ACC00336,Regular,False,Bengaluru,Karnataka,1249,1,ATM-PAT-073
+ACC00337,Regular,False,Patna,Bihar,2269,2,ATM-KAN-029
+ACC00338,Regular,False,Patna,Bihar,315,1,ATM-LUC-005
+ACC00339,Regular,False,Jaipur,Rajasthan,574,1,ATM-KAN-095
+ACC00340,Regular,False,Hyderabad,Telangana,2296,2,ATM-JAI-090
+ACC00341,Regular,False,Patna,Bihar,641,1,ATM-MUM-049
+ACC00342,Regular,False,Mumbai,Maharashtra,705,1,ATM-PAT-063
+ACC00343,Regular,False,Lucknow,Uttar Pradesh,2055,2,ATM-BEN-016
+ACC00344,Regular,False,Jaipur,Rajasthan,2740,1,ATM-KAN-012
+ACC00345,Regular,False,Hyderabad,Telangana,2653,1,ATM-KAN-012
+ACC00346,Regular,False,Hyderabad,Telangana,2106,2,ATM-BEN-001
+ACC00347,Regular,False,Mumbai,Maharashtra,1418,2,ATM-HYD-052
+ACC00348,Regular,False,Mumbai,Maharashtra,2717,1,ATM-MUM-009
+ACC00349,Regular,False,Hyderabad,Telangana,1029,1,ATM-DEL-033
+ACC00350,Regular,False,Jaipur,Rajasthan,1417,1,ATM-BEN-079
+ACC00351,Regular,False,Patna,Bihar,834,1,ATM-MUM-083
+ACC00352,Regular,False,Delhi,Delhi,1283,2,ATM-MUM-042
+ACC00353,Regular,False,Patna,Bihar,1712,2,ATM-LUC-040
+ACC00354,Regular,False,Hyderabad,Telangana,825,1,ATM-KAN-069
+ACC00355,Regular,False,Lucknow,Uttar Pradesh,509,2,ATM-BEN-079
+ACC00356,Regular,False,Delhi,Delhi,1118,1,ATM-KAN-030
+ACC00357,Regular,False,Kanpur,Uttar Pradesh,1124,2,ATM-KAN-029
+ACC00358,Regular,False,Delhi,Delhi,650,1,ATM-BEN-055
+ACC00359,Regular,False,Delhi,Delhi,1928,2,ATM-KAN-097
+ACC00360,Regular,False,Delhi,Delhi,2270,1,ATM-LUC-056
+ACC00361,Regular,False,Mumbai,Maharashtra,2403,2,ATM-BEN-088
+ACC00362,Regular,False,Kanpur,Uttar Pradesh,2301,1,ATM-PAT-003
+ACC00363,Regular,False,Lucknow,Uttar Pradesh,880,1,ATM-DEL-041
+ACC00364,Regular,False,Lucknow,Uttar Pradesh,583,2,ATM-LUC-037
+ACC00365,Regular,False,Jaipur,Rajasthan,1787,2,ATM-DEL-047
+ACC00366,Regular,False,Patna,Bihar,1573,2,ATM-KAN-018
+ACC00367,Regular,False,Bengaluru,Karnataka,1144,2,ATM-BEN-067
+ACC00368,Regular,False,Patna,Bihar,1692,1,ATM-DEL-072
+ACC00369,Regular,False,Mumbai,Maharashtra,2566,2,ATM-MUM-021
+ACC00370,Regular,False,Mumbai,Maharashtra,1883,1,ATM-DEL-010
+ACC00371,Regular,False,Patna,Bihar,2428,1,ATM-BEN-079
+ACC00372,Regular,False,Bengaluru,Karnataka,1551,2,ATM-PAT-063
+ACC00373,Regular,False,Mumbai,Maharashtra,2216,2,ATM-KAN-029
+ACC00374,Regular,False,Hyderabad,Telangana,214,1,ATM-HYD-081
+ACC00375,Regular,False,Kanpur,Uttar Pradesh,2136,2,ATM-JAI-058
+ACC00376,Regular,False,Kanpur,Uttar Pradesh,2199,1,ATM-BEN-085
+ACC00377,Regular,False,Lucknow,Uttar Pradesh,1154,1,ATM-KAN-059
+ACC00378,Regular,False,Kanpur,Uttar Pradesh,2884,2,ATM-DEL-086
+ACC00379,Regular,False,Mumbai,Maharashtra,1825,2,ATM-MUM-009
+ACC00380,Regular,False,Hyderabad,Telangana,1374,2,ATM-HYD-044
+ACC00381,Regular,False,Kanpur,Uttar Pradesh,2851,2,ATM-HYD-081
+ACC00382,Regular,False,Patna,Bihar,2751,2,ATM-BEN-088
+ACC00383,Regular,False,Kanpur,Uttar Pradesh,1606,1,ATM-JAI-058
+ACC00384,Regular,False,Kanpur,Uttar Pradesh,901,2,ATM-LUC-025
+ACC00385,Regular,False,Patna,Bihar,2639,2,ATM-BEN-061
+ACC00386,Regular,False,Delhi,Delhi,468,2,ATM-KAN-030
+ACC00387,Regular,False,Patna,Bihar,2144,2,ATM-PAT-073
+ACC00388,Regular,False,Jaipur,Rajasthan,244,1,ATM-PAT-073
+ACC00389,Regular,False,Kanpur,Uttar Pradesh,610,2,ATM-MUM-089
+ACC00390,Regular,False,Kanpur,Uttar Pradesh,1235,1,ATM-DEL-002
+ACC00391,Regular,False,Patna,Bihar,1376,1,ATM-DEL-035
+ACC00392,Regular,False,Lucknow,Uttar Pradesh,473,1,ATM-DEL-072
+ACC00393,Regular,False,Lucknow,Uttar Pradesh,2790,1,ATM-KAN-077
+ACC00394,Regular,False,Hyderabad,Telangana,526,1,ATM-HYD-036
+ACC00395,Regular,False,Bengaluru,Karnataka,2957,2,ATM-KAN-077
+ACC00396,Regular,False,Jaipur,Rajasthan,705,1,ATM-PAT-028
+ACC00397,Regular,False,Bengaluru,Karnataka,2776,1,ATM-BEN-079
+ACC00398,Regular,False,Kanpur,Uttar Pradesh,1058,1,ATM-DEL-086
+ACC00399,Regular,False,Mumbai,Maharashtra,1847,1,ATM-JAI-080
+ACC00400,Regular,False,Delhi,Delhi,1249,1,ATM-JAI-080
+ACC00401,Regular,False,Lucknow,Uttar Pradesh,1125,2,ATM-PAT-039
+ACC00402,Regular,False,Hyderabad,Telangana,2401,2,ATM-DEL-004
+ACC00403,Regular,False,Jaipur,Rajasthan,1120,1,ATM-KAN-093
+ACC00404,Regular,False,Mumbai,Maharashtra,1348,2,ATM-DEL-011
+ACC00405,Regular,False,Kanpur,Uttar Pradesh,2773,2,ATM-DEL-041
+ACC00406,Regular,False,Patna,Bihar,1493,1,ATM-MUM-022
+ACC00407,Regular,False,Bengaluru,Karnataka,2259,1,ATM-BEN-016
+ACC00408,Regular,False,Jaipur,Rajasthan,1835,1,ATM-BEN-067
+ACC00409,Regular,False,Kanpur,Uttar Pradesh,1455,1,ATM-MUM-021
+ACC00410,Regular,False,Kanpur,Uttar Pradesh,879,1,ATM-BEN-061
+ACC00411,Regular,False,Kanpur,Uttar Pradesh,1585,2,ATM-KAN-095
+ACC00412,Regular,False,Jaipur,Rajasthan,275,1,ATM-KAN-014
+ACC00413,Regular,False,Hyderabad,Telangana,1201,1,ATM-MUM-009
+ACC00414,Regular,False,Mumbai,Maharashtra,962,2,ATM-KAN-096
+ACC00415,Regular,False,Bengaluru,Karnataka,216,1,ATM-DEL-086
+ACC00416,Regular,False,Patna,Bihar,1632,1,ATM-LUC-071
+ACC00417,Regular,False,Jaipur,Rajasthan,2890,1,ATM-DEL-011
+ACC00418,Regular,False,Patna,Bihar,1751,2,ATM-BEN-001
+ACC00419,Regular,False,Kanpur,Uttar Pradesh,420,1,ATM-MUM-068
+ACC00420,Regular,False,Delhi,Delhi,700,1,ATM-JAI-058
+ACC00421,Regular,False,Jaipur,Rajasthan,1858,1,ATM-DEL-086
+ACC00422,Regular,False,Kanpur,Uttar Pradesh,1300,1,ATM-BEN-074
+ACC00423,Regular,False,Patna,Bihar,771,1,ATM-HYD-081
+ACC00424,Regular,False,Jaipur,Rajasthan,1165,2,ATM-DEL-013
+ACC00425,Regular,False,Bengaluru,Karnataka,717,1,ATM-MUM-060
+ACC00426,Regular,False,Lucknow,Uttar Pradesh,1245,2,ATM-BEN-079
+ACC00427,Regular,False,Jaipur,Rajasthan,1772,2,ATM-MUM-078
+ACC00428,Regular,False,Bengaluru,Karnataka,1009,1,ATM-LUC-082
+ACC00429,Regular,False,Delhi,Delhi,1458,2,ATM-HYD-081
+ACC00430,Regular,False,Hyderabad,Telangana,1687,1,ATM-MUM-089
+ACC00431,Regular,False,Kanpur,Uttar Pradesh,1310,2,ATM-MUM-083
+ACC00432,Regular,False,Patna,Bihar,2338,2,ATM-KAN-014
+ACC00433,Regular,False,Mumbai,Maharashtra,693,1,ATM-LUC-005
+ACC00434,Regular,False,Lucknow,Uttar Pradesh,392,1,ATM-JAI-038
+ACC00435,Regular,False,Hyderabad,Telangana,1232,2,ATM-KAN-014
+ACC00436,Regular,False,Delhi,Delhi,2710,2,ATM-KAN-030
+ACC00437,Regular,False,Mumbai,Maharashtra,1332,1,ATM-MUM-049
+ACC00438,Regular,False,Hyderabad,Telangana,2940,2,ATM-DEL-047
+ACC00439,Regular,False,Patna,Bihar,2199,1,ATM-MUM-075
+ACC00440,Regular,False,Mumbai,Maharashtra,1330,1,ATM-DEL-053
+ACC00441,Regular,False,Delhi,Delhi,805,2,ATM-BEN-062
+ACC00442,Regular,False,Patna,Bihar,733,1,ATM-DEL-035
+ACC00443,Regular,False,Lucknow,Uttar Pradesh,235,2,ATM-BEN-088
+ACC00444,Regular,False,Jaipur,Rajasthan,1136,1,ATM-JAI-027
+ACC00445,Regular,False,Hyderabad,Telangana,683,1,ATM-LUC-056
+ACC00446,Regular,False,Bengaluru,Karnataka,1749,2,ATM-LUC-046
+ACC00447,Regular,False,Delhi,Delhi,460,2,ATM-KAN-087
+ACC00448,Regular,False,Jaipur,Rajasthan,2968,2,ATM-KAN-069
+ACC00449,Regular,False,Jaipur,Rajasthan,2593,1,ATM-KAN-007
+ACC00450,Regular,False,Patna,Bihar,2894,2,ATM-DEL-035
+ACC00451,Regular,False,Bengaluru,Karnataka,2064,1,ATM-BEN-015
+ACC00452,Regular,False,Hyderabad,Telangana,1326,1,ATM-DEL-011
+ACC00453,Regular,False,Bengaluru,Karnataka,2707,1,ATM-LUC-082
+ACC00454,Regular,False,Lucknow,Uttar Pradesh,1965,1,ATM-PAT-006
+ACC00455,Regular,False,Jaipur,Rajasthan,766,1,ATM-PAT-031
+ACC00456,Regular,False,Mumbai,Maharashtra,526,1,ATM-DEL-072
+ACC00457,Regular,False,Bengaluru,Karnataka,1824,2,ATM-PAT-008
+ACC00458,Regular,False,Bengaluru,Karnataka,2165,1,ATM-MUM-075
+ACC00459,Regular,False,Bengaluru,Karnataka,2485,2,ATM-KAN-029
+ACC00460,Regular,False,Jaipur,Rajasthan,1127,1,ATM-MUM-099
+ACC00461,Regular,False,Mumbai,Maharashtra,1250,1,ATM-PAT-076
+ACC00462,Regular,False,Lucknow,Uttar Pradesh,276,2,ATM-DEL-035
+ACC00463,Regular,False,Mumbai,Maharashtra,1940,2,ATM-BEN-016
+ACC00464,Regular,False,Kanpur,Uttar Pradesh,2362,1,ATM-MUM-022
+ACC00465,Regular,False,Delhi,Delhi,1409,2,ATM-BEN-084
+ACC00466,Regular,False,Lucknow,Uttar Pradesh,799,2,ATM-BEN-016
+ACC00467,Regular,False,Lucknow,Uttar Pradesh,2333,2,ATM-JAI-045
+ACC00468,Regular,False,Bengaluru,Karnataka,502,2,ATM-MUM-075
+ACC00469,Regular,False,Jaipur,Rajasthan,1554,2,ATM-DEL-002
+ACC00470,Regular,False,Mumbai,Maharashtra,1508,2,ATM-DEL-033
+ACC00471,Regular,False,Lucknow,Uttar Pradesh,1379,1,ATM-BEN-016
+ACC00472,Regular,False,Patna,Bihar,1625,1,ATM-BEN-067
+ACC00473,Regular,False,Delhi,Delhi,1707,1,ATM-KAN-095
+ACC00474,Regular,False,Delhi,Delhi,1315,1,ATM-MUM-060
+ACC00475,Regular,False,Hyderabad,Telangana,572,1,ATM-MUM-099
+ACC00476,Regular,False,Jaipur,Rajasthan,1369,2,ATM-DEL-065
+ACC00477,Regular,False,Delhi,Delhi,1662,1,ATM-BEN-057
+ACC00478,Regular,False,Bengaluru,Karnataka,2129,1,ATM-MUM-078
+ACC00479,Regular,False,Lucknow,Uttar Pradesh,231,2,ATM-KAN-093
+ACC00480,Regular,False,Kanpur,Uttar Pradesh,1673,2,ATM-JAI-058
+ACC00481,Regular,False,Lucknow,Uttar Pradesh,1805,2,ATM-KAN-007
+ACC00482,Regular,False,Hyderabad,Telangana,369,1,ATM-KAN-051
+ACC00483,Regular,False,Patna,Bihar,2017,2,ATM-KAN-087
+ACC00484,Regular,False,Delhi,Delhi,2210,1,ATM-BEN-062
+ACC00485,Regular,False,Hyderabad,Telangana,211,1,ATM-MUM-009
+ACC00486,Regular,False,Delhi,Delhi,923,1,ATM-DEL-041
+ACC00487,Regular,False,Mumbai,Maharashtra,2644,2,ATM-PAT-008
+ACC00488,Regular,False,Mumbai,Maharashtra,887,1,ATM-DEL-035
+ACC00489,Regular,False,Jaipur,Rajasthan,2055,1,ATM-MUM-048
+ACC00490,Regular,False,Kanpur,Uttar Pradesh,1796,1,ATM-JAI-058
+ACC00491,Regular,False,Patna,Bihar,1360,2,ATM-KAN-012
+ACC00492,Regular,False,Delhi,Delhi,2353,2,ATM-MUM-083
+ACC00493,Regular,False,Bengaluru,Karnataka,312,2,ATM-BEN-055
+ACC00494,Regular,False,Hyderabad,Telangana,2883,1,ATM-KAN-029
+ACC00495,Regular,False,Patna,Bihar,413,2,ATM-LUC-043
+ACC00496,Regular,False,Hyderabad,Telangana,2354,1,ATM-KAN-051
+ACC00497,Regular,False,Patna,Bihar,1277,2,ATM-KAN-093
+ACC00498,Regular,False,Delhi,Delhi,1412,2,ATM-LUC-040
+ACC00499,Regular,False,Patna,Bihar,2207,1,ATM-LUC-040

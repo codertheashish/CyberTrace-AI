@@ -1,0 +1,101 @@
+location_id,area,city,state,location_type,latitude,longitude,is_hotspot,base_withdrawal_rate
+ATM-DEL-000,Delhi Sector 2,Delhi,Delhi,Merchant POS,28.568734,77.371257,True,0.7
+ATM-BEN-001,Bengaluru Sector 15,Bengaluru,Karnataka,Bank Branch Cash Counter,13.055118,77.630117,True,0.7
+ATM-DEL-002,Delhi Sector 35,Delhi,Delhi,ATM,28.490067,77.085158,True,0.7
+ATM-PAT-003,Patna Sector 3,Patna,Bihar,ATM,25.43501,85.269423,True,0.7
+ATM-DEL-004,Delhi Sector 14,Delhi,Delhi,Bank Branch Cash Counter,28.650301,77.283906,True,0.7
+ATM-LUC-005,Lucknow Sector 36,Lucknow,Uttar Pradesh,Bank Branch Cash Counter,26.67411,81.115368,True,0.7
+ATM-PAT-006,Patna Sector 15,Patna,Bihar,Cash Agent Point,25.713779,85.034042,True,0.7
+ATM-KAN-007,Kanpur Sector 1,Kanpur,Uttar Pradesh,Bank Branch Cash Counter,26.335357,80.217926,True,0.7
+ATM-PAT-008,Patna Sector 22,Patna,Bihar,Merchant POS,25.523627,85.146512,True,0.7
+ATM-MUM-009,Mumbai Sector 14,Mumbai,Maharashtra,Merchant POS,19.0515,72.802542,True,0.7
+ATM-DEL-010,Delhi Sector 6,Delhi,Delhi,Cash Agent Point,28.654167,77.079218,True,0.7
+ATM-DEL-011,Delhi Sector 23,Delhi,Delhi,Merchant POS,28.539072,77.16089,True,0.7
+ATM-KAN-012,Kanpur Sector 3,Kanpur,Uttar Pradesh,Cash Agent Point,26.434085,80.434563,True,0.7
+ATM-DEL-013,Delhi Sector 25,Delhi,Delhi,ATM,28.505783,77.214124,True,0.7
+ATM-KAN-014,Kanpur Sector 40,Kanpur,Uttar Pradesh,Merchant POS,26.483169,80.168622,True,0.7
+ATM-BEN-015,Bengaluru Sector 5,Bengaluru,Karnataka,ATM,13.010316,77.475989,False,0.15
+ATM-BEN-016,Bengaluru Sector 19,Bengaluru,Karnataka,ATM,12.815019,77.756199,False,0.15
+ATM-BEN-017,Bengaluru Sector 7,Bengaluru,Karnataka,Cash Agent Point,13.139228,77.705623,False,0.15
+ATM-KAN-018,Kanpur Sector 30,Kanpur,Uttar Pradesh,Merchant POS,26.379561,80.187062,False,0.15
+ATM-MUM-019,Mumbai Sector 24,Mumbai,Maharashtra,Merchant POS,19.142324,72.856155,False,0.15
+ATM-BEN-020,Bengaluru Sector 18,Bengaluru,Karnataka,ATM,12.835534,77.592864,False,0.15
+ATM-MUM-021,Mumbai Sector 35,Mumbai,Maharashtra,Bank Branch Cash Counter,18.90838,73.025055,False,0.15
+ATM-MUM-022,Mumbai Sector 30,Mumbai,Maharashtra,Cash Agent Point,18.989161,72.936208,False,0.15
+ATM-KAN-023,Kanpur Sector 36,Kanpur,Uttar Pradesh,Bank Branch Cash Counter,26.382116,80.339124,False,0.15
+ATM-JAI-024,Jaipur Sector 4,Jaipur,Rajasthan,Bank Branch Cash Counter,26.929216,75.673848,False,0.15
+ATM-LUC-025,Lucknow Sector 21,Lucknow,Uttar Pradesh,Cash Agent Point,27.01575,81.045248,False,0.15
+ATM-KAN-026,Kanpur Sector 5,Kanpur,Uttar Pradesh,Bank Branch Cash Counter,26.60812,80.474038,False,0.15
+ATM-JAI-027,Jaipur Sector 14,Jaipur,Rajasthan,Cash Agent Point,26.947644,75.939175,False,0.15
+ATM-PAT-028,Patna Sector 30,Patna,Bihar,Bank Branch Cash Counter,25.445957,85.028154,False,0.15
+ATM-KAN-029,Kanpur Sector 9,Kanpur,Uttar Pradesh,Bank Branch Cash Counter,26.286182,80.269019,False,0.15
+ATM-KAN-030,Kanpur Sector 38,Kanpur,Uttar Pradesh,Cash Agent Point,26.409824,80.249586,False,0.15
+ATM-PAT-031,Patna Sector 24,Patna,Bihar,Bank Branch Cash Counter,25.712446,85.086031,False,0.15
+ATM-MUM-032,Mumbai Sector 33,Mumbai,Maharashtra,Cash Agent Point,18.997136,72.893071,False,0.15
+ATM-DEL-033,Delhi Sector 4,Delhi,Delhi,ATM,28.484633,77.317791,False,0.15
+ATM-MUM-034,Mumbai Sector 11,Mumbai,Maharashtra,Cash Agent Point,18.922838,73.052979,False,0.15
+ATM-DEL-035,Delhi Sector 25,Delhi,Delhi,Cash Agent Point,28.711908,77.100538,False,0.15
+ATM-HYD-036,Hyderabad Sector 34,Hyderabad,Telangana,Merchant POS,17.206988,78.600266,False,0.15
+ATM-LUC-037,Lucknow Sector 8,Lucknow,Uttar Pradesh,Merchant POS,26.921169,81.028643,False,0.15
+ATM-JAI-038,Jaipur Sector 8,Jaipur,Rajasthan,Merchant POS,27.010057,75.633956,False,0.15
+ATM-PAT-039,Patna Sector 11,Patna,Bihar,Cash Agent Point,25.543148,84.999313,False,0.15
+ATM-LUC-040,Lucknow Sector 17,Lucknow,Uttar Pradesh,Bank Branch Cash Counter,26.977417,80.990587,False,0.15
+ATM-DEL-041,Delhi Sector 20,Delhi,Delhi,Bank Branch Cash Counter,28.553023,77.051881,False,0.15
+ATM-MUM-042,Mumbai Sector 24,Mumbai,Maharashtra,Bank Branch Cash Counter,19.007954,72.814766,False,0.15
+ATM-LUC-043,Lucknow Sector 39,Lucknow,Uttar Pradesh,Merchant POS,26.929358,80.995721,False,0.15
+ATM-HYD-044,Hyderabad Sector 2,Hyderabad,Telangana,ATM,17.524397,78.476697,False,0.15
+ATM-JAI-045,Jaipur Sector 20,Jaipur,Rajasthan,Bank Branch Cash Counter,26.775454,75.864068,False,0.15
+ATM-LUC-046,Lucknow Sector 16,Lucknow,Uttar Pradesh,ATM,26.940583,80.96826,False,0.15
+ATM-DEL-047,Delhi Sector 32,Delhi,Delhi,ATM,28.711448,77.206766,False,0.15
+ATM-MUM-048,Mumbai Sector 9,Mumbai,Maharashtra,Cash Agent Point,19.084184,72.851615,False,0.15
+ATM-MUM-049,Mumbai Sector 17,Mumbai,Maharashtra,Cash Agent Point,18.905151,72.736541,False,0.15
+ATM-BEN-050,Bengaluru Sector 35,Bengaluru,Karnataka,Bank Branch Cash Counter,12.802915,77.643708,False,0.15
+ATM-KAN-051,Kanpur Sector 26,Kanpur,Uttar Pradesh,Merchant POS,26.383068,80.334985,False,0.15
+ATM-HYD-052,Hyderabad Sector 34,Hyderabad,Telangana,Cash Agent Point,17.531724,78.396445,False,0.15
+ATM-DEL-053,Delhi Sector 16,Delhi,Delhi,Bank Branch Cash Counter,28.581638,77.300998,False,0.15
+ATM-DEL-054,Delhi Sector 22,Delhi,Delhi,ATM,28.516267,77.056713,False,0.15
+ATM-BEN-055,Bengaluru Sector 38,Bengaluru,Karnataka,Bank Branch Cash Counter,12.895911,77.47264,False,0.15
+ATM-LUC-056,Lucknow Sector 5,Lucknow,Uttar Pradesh,ATM,27.001391,81.057123,False,0.15
+ATM-BEN-057,Bengaluru Sector 5,Bengaluru,Karnataka,ATM,13.019625,77.728326,False,0.15
+ATM-JAI-058,Jaipur Sector 5,Jaipur,Rajasthan,Bank Branch Cash Counter,27.021722,75.674465,False,0.15
+ATM-KAN-059,Kanpur Sector 32,Kanpur,Uttar Pradesh,Bank Branch Cash Counter,26.591221,80.346063,False,0.15
+ATM-MUM-060,Mumbai Sector 37,Mumbai,Maharashtra,Cash Agent Point,19.186678,73.020293,False,0.15
+ATM-BEN-061,Bengaluru Sector 31,Bengaluru,Karnataka,Cash Agent Point,12.906081,77.454219,False,0.15
+ATM-BEN-062,Bengaluru Sector 7,Bengaluru,Karnataka,ATM,12.873657,77.568359,False,0.15
+ATM-PAT-063,Patna Sector 23,Patna,Bihar,Cash Agent Point,25.708585,85.267463,False,0.15
+ATM-PAT-064,Patna Sector 30,Patna,Bihar,ATM,25.416603,85.141469,False,0.15
+ATM-DEL-065,Delhi Sector 4,Delhi,Delhi,Cash Agent Point,28.584168,77.108959,False,0.15
+ATM-JAI-066,Jaipur Sector 7,Jaipur,Rajasthan,Bank Branch Cash Counter,26.775552,75.728841,False,0.15
+ATM-BEN-067,Bengaluru Sector 13,Bengaluru,Karnataka,Cash Agent Point,13.131047,77.530953,False,0.15
+ATM-MUM-068,Mumbai Sector 28,Mumbai,Maharashtra,Bank Branch Cash Counter,19.082765,72.950787,False,0.15
+ATM-KAN-069,Kanpur Sector 30,Kanpur,Uttar Pradesh,Bank Branch Cash Counter,26.400807,80.501742,False,0.15
+ATM-DEL-070,Delhi Sector 29,Delhi,Delhi,ATM,28.780381,77.119642,False,0.15
+ATM-LUC-071,Lucknow Sector 35,Lucknow,Uttar Pradesh,ATM,26.845709,80.874516,False,0.15
+ATM-DEL-072,Delhi Sector 16,Delhi,Delhi,Bank Branch Cash Counter,28.536443,77.042279,False,0.15
+ATM-PAT-073,Patna Sector 32,Patna,Bihar,Cash Agent Point,25.633543,85.138564,False,0.15
+ATM-BEN-074,Bengaluru Sector 26,Bengaluru,Karnataka,ATM,12.810132,77.514913,False,0.15
+ATM-MUM-075,Mumbai Sector 25,Mumbai,Maharashtra,ATM,19.222976,72.783942,False,0.15
+ATM-PAT-076,Patna Sector 17,Patna,Bihar,Cash Agent Point,25.466262,85.133803,False,0.15
+ATM-KAN-077,Kanpur Sector 28,Kanpur,Uttar Pradesh,Cash Agent Point,26.624734,80.23904,False,0.15
+ATM-MUM-078,Mumbai Sector 13,Mumbai,Maharashtra,Merchant POS,19.137969,72.971883,False,0.15
+ATM-BEN-079,Bengaluru Sector 4,Bengaluru,Karnataka,ATM,12.87715,77.676758,False,0.15
+ATM-JAI-080,Jaipur Sector 4,Jaipur,Rajasthan,ATM,26.864802,75.83493,False,0.15
+ATM-HYD-081,Hyderabad Sector 33,Hyderabad,Telangana,Bank Branch Cash Counter,17.433071,78.499579,False,0.15
+ATM-LUC-082,Lucknow Sector 33,Lucknow,Uttar Pradesh,ATM,26.699204,81.066909,False,0.15
+ATM-MUM-083,Mumbai Sector 5,Mumbai,Maharashtra,ATM,19.011481,72.764847,False,0.15
+ATM-BEN-084,Bengaluru Sector 26,Bengaluru,Karnataka,ATM,12.806279,77.627321,False,0.15
+ATM-BEN-085,Bengaluru Sector 38,Bengaluru,Karnataka,ATM,13.035523,77.420572,False,0.15
+ATM-DEL-086,Delhi Sector 27,Delhi,Delhi,Merchant POS,28.618254,77.110538,False,0.15
+ATM-KAN-087,Kanpur Sector 14,Kanpur,Uttar Pradesh,Merchant POS,26.502162,80.214672,False,0.15
+ATM-BEN-088,Bengaluru Sector 17,Bengaluru,Karnataka,Cash Agent Point,13.040338,77.553825,False,0.15
+ATM-MUM-089,Mumbai Sector 20,Mumbai,Maharashtra,Cash Agent Point,19.233223,72.747208,False,0.15
+ATM-JAI-090,Jaipur Sector 5,Jaipur,Rajasthan,ATM,26.855184,75.64815,False,0.15
+ATM-HYD-091,Hyderabad Sector 40,Hyderabad,Telangana,ATM,17.53789,78.622542,False,0.15
+ATM-DEL-092,Delhi Sector 35,Delhi,Delhi,Bank Branch Cash Counter,28.526759,77.266594,False,0.15
+ATM-KAN-093,Kanpur Sector 9,Kanpur,Uttar Pradesh,Merchant POS,26.5641,80.351772,False,0.15
+ATM-DEL-094,Delhi Sector 16,Delhi,Delhi,Merchant POS,28.624574,77.116067,False,0.15
+ATM-KAN-095,Kanpur Sector 11,Kanpur,Uttar Pradesh,Cash Agent Point,26.303417,80.474898,False,0.15
+ATM-KAN-096,Kanpur Sector 40,Kanpur,Uttar Pradesh,ATM,26.594051,80.379817,False,0.15
+ATM-KAN-097,Kanpur Sector 7,Kanpur,Uttar Pradesh,Bank Branch Cash Counter,26.391951,80.277615,False,0.15
+ATM-KAN-098,Kanpur Sector 8,Kanpur,Uttar Pradesh,ATM,26.531244,80.47486,False,0.15
+ATM-MUM-099,Mumbai Sector 18,Mumbai,Maharashtra,Merchant POS,19.215351,72.978455,False,0.15

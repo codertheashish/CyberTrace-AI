@@ -1,0 +1,28 @@
+version: "3.9"
+
+services:
+  backend:
+    build:
+      context: ./backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend/data:/app/data
+      - ./ml/saved_models:/app/../ml/saved_models
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000
+
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "5173:5173"
+    environment:
+      - VITE_API_BASE=http://backend:8000
+    depends_on:
+      - backend
+    command: npm run dev -- --host 0.0.0.0 --port 5173
+
+# NOTE: Before first run, generate the dataset and train the model:
+#   docker compose run backend python ../ml/generate_dataset.py
+#   docker compose run backend python ../ml/train_model.py
+#   docker compose run backend python app/database/setup_db.py

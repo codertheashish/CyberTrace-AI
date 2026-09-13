@@ -1,0 +1,16 @@
+# Render.com blueprint for the CyberTrace AI backend.
+# Deploy: connect your GitHub repo in Render, choose "New Web Service",
+# point the root directory to `backend`, and Render will pick this up
+# (or configure the build/start commands manually as shown below).
+services:
+  - type: web
+    name: cybertrace-backend
+    env: python
+    region: singapore
+    plan: free
+    buildCommand: >
+      pip install -r requirements.txt &&
+      python ../ml/generate_dataset.py &&
+      python ../ml/train_model.py &&
+      python app/database/setup_db.py
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
