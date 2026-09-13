@@ -52,6 +52,26 @@ def build_db():
             status TEXT
         )
     """)
+    conn.execute("""
+        CREATE TABLE IF NOT EXISTS notification_log (
+            notification_id TEXT PRIMARY KEY,
+            alert_id TEXT,
+            channel TEXT,
+            recipient TEXT,
+            sent_at TEXT,
+            status TEXT
+        )
+    """)
+    conn.execute("""
+        CREATE TABLE IF NOT EXISTS investigation_notes (
+            note_id TEXT PRIMARY KEY,
+            complaint_id TEXT,
+            author TEXT,
+            category TEXT,
+            content TEXT,
+            created_at TEXT
+        )
+    """)
     conn.commit()
     conn.close()
     print(f"\nDatabase built at {DB_PATH}")

@@ -37,9 +37,26 @@ export const api = {
     const qs = new URLSearchParams(params).toString();
     return fetch(`${BASE}/locations?${qs}`).then((r) => handle<any>(r));
   },
+  locationsHeatmap: () => fetch(`${BASE}/locations/heatmap`).then((r) => handle<any>(r)),
+  crimeTypes: () => fetch(`${BASE}/locations/crime-types`).then((r) => handle<any>(r)),
   alerts: () => fetch(`${BASE}/alerts`).then((r) => handle<any>(r)),
   reviewAlert: (id: string) =>
     fetch(`${BASE}/alerts/${id}/review`, { method: 'POST' }).then((r) => handle<any>(r)),
+  notifyAlert: (id: string, channels: string[]) =>
+    fetch(`${BASE}/alerts/${id}/notify`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ channels }),
+    }).then((r) => handle<any>(r)),
+  alertNotifications: (id: string) => fetch(`${BASE}/alerts/${id}/notifications`).then((r) => handle<any>(r)),
+  notes: (complaintId: string) => fetch(`${BASE}/complaints/${complaintId}/notes`).then((r) => handle<any>(r)),
+  addNote: (complaintId: string, author: string, category: string, content: string) =>
+    fetch(`${BASE}/complaints/${complaintId}/notes`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ author, category, content }),
+    }).then((r) => handle<any>(r)),
+  deleteNote: (noteId: string) => fetch(`${BASE}/notes/${noteId}`, { method: 'DELETE' }).then((r) => handle<any>(r)),
   network: (complaintId: string) => fetch(`${BASE}/network/${complaintId}`).then((r) => handle<any>(r)),
   predict: (complaint_id: string, account_id?: string) =>
     fetch(`${BASE}/predict`, {

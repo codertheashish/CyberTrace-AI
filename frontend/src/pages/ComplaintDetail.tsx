@@ -1,8 +1,113 @@
 import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, ArrowDown, Share2, Sparkles } from 'lucide-react';
+import { ArrowLeft, ArrowDown, Share2, Sparkles, FileText, Plus, Trash2 } from 'lucide-react';
 import { api } from '../services/api';
 import RiskBadge from '../components/RiskBadge';
+
+const NOTE_CATEGORIES = ['Evidence', 'Finding', 'Action Taken', 'Note'];
+
+function EvidenceLog({ complaintId }: { complaintId: string }) {
+  const [notes, setNotes] = useState<any[]>([]);
+  const [content, setContent] = useState('');
+  const [category, setCategory] = useState('Evidence');
+  const [author, setAuthor] = useState(localStorage.getItem('ct_investigator') || 'Investigator');
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState('');
+
+  const load = () => api.notes(complaintId).then((d) => setNotes(d.items));
+
+  useEffect(() => { load(); }, [complaintId]);
+
+  const submit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!content.trim()) return;
+    setSubmitting(true);
+    setError('');
+    try {
+      await api.addNote(complaintId, author, category, content);
+      setContent('');
+      await load();
+    } catch (err: any) {
+      setError(err.message);
+    } finally {
+      setSubmitting(false);
+    }
+  };
+
+  const remove = async (noteId: string) => {
+    await api.deleteNote(noteId);
+    load();
+  };
+
+  const catColor: Record<string, string> = {
+    Evidence: 'border-cyan-500/30 bg-cyan-500/10 text-cyan-300',
+    Finding: 'border-orange-500/30 bg-orange-500/10 text-orange-300',
+    'Action Taken': 'border-emerald-500/30 bg-emerald-500/10 text-emerald-300',
+    Note: 'border-white/10 bg-white/5 text-slate-300',
+  };
+
+  return (
+    <div className="glass-panel rounded-xl p-5">
+      <h2 className="text-sm font-semibold text-white mb-4 flex items-center gap-2">
+        <FileText size={15} className="text-cyan-400" /> Evidence & Investigation Log
+      </h2>
+
+      <form onSubmit={submit} className="space-y-2 mb-4">
+        <div className="flex gap-2">
+          <select
+            value={category}
+            onChange={(e) => setCategory(e.target.value)}
+            className="bg-black/30 border border-white/10 rounded-lg px-2 py-1.5 text-xs outline-none"
+          >
+            {NOTE_CATEGORIES.map((c) => <option key={c} value={c}>{c}</option>)}
+          </select>
+          <input
+            value={author}
+            onChange={(e) => setAuthor(e.target.value)}
+            placeholder="Investigator name"
+            className="flex-1 bg-black/30 border border-white/10 rounded-lg px-2 py-1.5 text-xs outline-none"
+          />
+        </div>
+        <textarea
+          value={content}
+          onChange={(e) => setContent(e.target.value)}
+          placeholder="Log evidence found, an investigative finding, or an action taken on this case…"
+          rows={2}
+          className="w-full bg-black/30 border border-white/10 rounded-lg px-3 py-2 text-xs outline-none resize-none focus:border-cyan-500/50"
+        />
+        {error && <div className="text-[11px] text-rose-400">{error}</div>}
+        <button
+          type="submit"
+          disabled={submitting || !content.trim()}
+          className="flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-lg bg-cyan-500 text-black font-semibold hover:bg-cyan-400 disabled:opacity-40"
+        >
+          <Plus size={13} /> Add Entry
+        </button>
+      </form>
+
+      <div className="space-y-2 max-h-72 overflow-y-auto pr-1">
+        {notes.length === 0 ? (
+          <div className="text-xs text-slate-500">No evidence or notes logged yet for this complaint.</div>
+        ) : (
+          notes.map((n) => (
+            <div key={n.note_id} className="bg-white/5 rounded-lg p-3 space-y-1">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <span className={`text-[10px] px-1.5 py-0.5 rounded border ${catColor[n.category] || catColor.Note}`}>{n.category}</span>
+                  <span className="text-[10px] text-slate-500">{n.author} · {new Date(n.created_at).toLocaleString()}</span>
+                </div>
+                <button onClick={() => remove(n.note_id)} className="text-slate-600 hover:text-rose-400">
+                  <Trash2 size={12} />
+                </button>
+              </div>
+              <p className="text-xs text-slate-300">{n.content}</p>
+            </div>
+          ))
+        )}
+      </div>
+    </div>
+  );
+}
 
 export default function ComplaintDetail() {
   const { id } = useParams();
@@ -129,6 +234,8 @@ export default function ComplaintDetail() {
           </div>
         </div>
       </div>
+
+      <EvidenceLog complaintId={c.complaint_id} />
     </div>
   );
 }

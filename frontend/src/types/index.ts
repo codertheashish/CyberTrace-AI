@@ -39,6 +39,7 @@ export interface LocationRow {
   longitude: number;
   is_hotspot: number;
   historical_withdrawal_count: number;
+  linked_complaints?: number;
   risk_score: number;
   risk_level: 'LOW' | 'MEDIUM' | 'HIGH' | 'CRITICAL';
 }

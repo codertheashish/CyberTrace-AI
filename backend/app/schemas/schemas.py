@@ -36,6 +36,16 @@ class InvestigationSummaryRequest(BaseModel):
     complaint_id: str
 
 
+class NoteCreateRequest(BaseModel):
+    author: Optional[str] = "Investigator"
+    category: str = "Note"
+    content: str
+
+
+class NotifyRequest(BaseModel):
+    channels: List[str] = ["dashboard"]
+
+
 class DemoRunResponse(BaseModel):
     complaint: dict
     transactions: list

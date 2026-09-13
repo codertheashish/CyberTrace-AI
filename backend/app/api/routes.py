@@ -8,7 +8,8 @@ from app.ml.predictor import predict_locations, model_available, get_metrics
 from app.graph.network import build_complaint_network
 from app.services.investigation import generate_summary
 from app.services import alerts as alerts_service
-from app.schemas.schemas import PredictRequest, InvestigationSummaryRequest
+from app.services import notes as notes_service
+from app.schemas.schemas import PredictRequest, InvestigationSummaryRequest, NoteCreateRequest, NotifyRequest
 
 router = APIRouter(prefix="/api")
 
@@ -120,6 +121,25 @@ def complaint_detail(complaint_id: str):
     }
 
 
+@router.get("/complaints/{complaint_id}/notes")
+def get_notes(complaint_id: str):
+    return {"items": clean(notes_service.list_notes(complaint_id))}
+
+
+@router.post("/complaints/{complaint_id}/notes")
+def create_note(complaint_id: str, req: NoteCreateRequest):
+    try:
+        note = notes_service.add_note(complaint_id, req.author, req.category, req.content)
+        return note
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e))
+
+
+@router.delete("/notes/{note_id}")
+def remove_note(note_id: str):
+    return notes_service.delete_note(note_id)
+
+
 @router.get("/transactions")
 def list_transactions(complaint_id: str = "", suspicious_only: bool = False, page: int = 1, page_size: int = 25):
     where = []
@@ -164,7 +184,7 @@ def list_accounts(is_mule: bool = None, page: int = 1, page_size: int = 25):
 
 
 @router.get("/locations")
-def list_locations(risk: str = "", city: str = ""):
+def list_locations(risk: str = "", city: str = "", crime_type: str = "", date_from: str = "", date_to: str = ""):
     where = []
     params = []
     if city:
@@ -176,10 +196,46 @@ def list_locations(risk: str = "", city: str = ""):
     wd_counts = {r["location_id"]: r["c"] for r in query_df(
         "SELECT location_id, COUNT(*) c FROM withdrawals GROUP BY location_id"
     )}
+
+    # Drill-down by crime category / time range: join complaints -> suspected
+    # account -> that account's real preferred cash-out location (a genuine
+    # relationship baked in at dataset-generation time, not a guess), so we
+    # can count how many complaints of a given type/date-range funneled
+    # towards each location.
+    linked_counts: dict = {}
+    if crime_type or date_from or date_to:
+        c_where = []
+        c_params = []
+        if crime_type:
+            c_where.append("c.complaint_type = ?")
+            c_params.append(crime_type)
+        if date_from:
+            c_where.append("c.date >= ?")
+            c_params.append(date_from)
+        if date_to:
+            c_where.append("c.date <= ?")
+            c_params.append(date_to + "T23:59:59")
+        c_where_sql = f"WHERE {' AND '.join(c_where)}" if c_where else ""
+        linked = query_df(
+            f"""
+            SELECT a.preferred_location_id as location_id, COUNT(*) as c
+            FROM complaints c
+            JOIN accounts a ON a.account_id = c.suspected_account
+            {c_where_sql}
+            GROUP BY a.preferred_location_id
+            """,
+            c_params,
+        )
+        linked_counts = {r["location_id"]: r["c"] for r in linked}
+
     for r in rows:
         hist = wd_counts.get(r["location_id"], 0)
+        linked_n = linked_counts.get(r["location_id"], 0)
         base_score = 20 + hist * 8 + (25 if r["is_hotspot"] else 0)
+        if crime_type or date_from or date_to:
+            base_score += linked_n * 10
         r["historical_withdrawal_count"] = hist
+        r["linked_complaints"] = linked_n
         r["risk_score"] = min(99, base_score)
         r["risk_level"] = (
             "CRITICAL" if r["risk_score"] >= 80 else
@@ -188,7 +244,35 @@ def list_locations(risk: str = "", city: str = ""):
         )
     if risk:
         rows = [r for r in rows if r["risk_level"] == risk]
+    if crime_type or date_from or date_to:
+        rows = [r for r in rows if r["linked_complaints"] > 0]
+    rows.sort(key=lambda r: -r["risk_score"])
     return {"items": rows}
+
+
+@router.get("/locations/crime-types")
+def location_crime_types():
+    rows = query_df("SELECT DISTINCT complaint_type FROM complaints ORDER BY complaint_type")
+    return {"items": [r["complaint_type"] for r in rows]}
+
+
+@router.get("/locations/heatmap")
+def locations_heatmap():
+    """Returns [lat, lon, intensity] points for a Leaflet.heat-style GIS heatmap,
+    weighted by real historical withdrawal frequency and hotspot status."""
+    locs = query_df("SELECT * FROM locations")
+    wd_counts = {r["location_id"]: r["c"] for r in query_df(
+        "SELECT location_id, COUNT(*) c FROM withdrawals GROUP BY location_id"
+    )}
+    points = []
+    max_count = max(wd_counts.values(), default=1)
+    for loc in locs:
+        hist = wd_counts.get(loc["location_id"], 0)
+        intensity = round(0.15 + 0.85 * (hist / max_count if max_count else 0), 3)
+        if loc["is_hotspot"]:
+            intensity = min(1.0, intensity + 0.2)
+        points.append([loc["latitude"], loc["longitude"], intensity])
+    return {"points": points}
 
 
 @router.get("/alerts")
@@ -200,6 +284,28 @@ def get_alerts():
 @router.post("/alerts/{alert_id}/review")
 def review_alert(alert_id: str):
     return alerts_service.mark_reviewed(alert_id)
+
+
+@router.post("/alerts/{alert_id}/notify")
+def notify_alert(alert_id: str, req: NotifyRequest):
+    """Dispatches an alert over the requested channels (email/SMS/API/dashboard).
+    Delivery is simulated (no real SMS/email provider is configured in this demo)
+    but every dispatch is genuinely persisted to the notification_log table."""
+    try:
+        results = alerts_service.send_notification(alert_id, req.channels)
+        return {"alert_id": alert_id, "dispatched": results}
+    except ValueError as e:
+        raise HTTPException(status_code=404, detail=str(e))
+
+
+@router.get("/alerts/{alert_id}/notifications")
+def alert_notifications(alert_id: str):
+    return {"items": clean(alerts_service.notification_history(alert_id))}
+
+
+@router.get("/notifications")
+def all_notifications():
+    return {"items": clean(alerts_service.notification_history())}
 
 
 @router.get("/predictions")

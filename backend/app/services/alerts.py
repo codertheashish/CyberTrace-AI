@@ -51,3 +51,46 @@ def mark_reviewed(alert_id: str):
     conn.commit()
     conn.close()
     return {"alert_id": alert_id, "status": "Reviewed"}
+
+
+VALID_CHANNELS = {"email", "sms", "api", "dashboard"}
+
+
+def send_notification(alert_id: str, channels: list[str]):
+    """Simulates dispatching an alert over the requested channels (email/SMS/
+    API webhook/dashboard). No real email/SMS provider is wired up in this
+    demo — each dispatch is logged to notification_log so the UI can show a
+    real, persisted delivery history rather than a fake toast that vanishes.
+    """
+    alert_rows = query_df("SELECT * FROM alerts WHERE alert_id = ?", [alert_id])
+    if not alert_rows:
+        raise ValueError(f"Alert {alert_id} not found")
+
+    conn = get_conn()
+    results = []
+    for ch in channels:
+        ch = ch.lower()
+        if ch not in VALID_CHANNELS:
+            continue
+        notif_id = f"NOTIF-{uuid.uuid4().hex[:8].upper()}"
+        recipient = {
+            "email": "cybercell-alerts@i4c.gov.in (simulated)",
+            "sms": "+91-XXXXXXXXXX (simulated)",
+            "api": "https://partner-bank.example/webhook (simulated)",
+            "dashboard": "Investigator Dashboard",
+        }[ch]
+        conn.execute(
+            "INSERT INTO notification_log (notification_id, alert_id, channel, recipient, sent_at, status) "
+            "VALUES (?,?,?,?,?,?)",
+            [notif_id, alert_id, ch, recipient, datetime.utcnow().isoformat(), "Delivered"],
+        )
+        results.append({"notification_id": notif_id, "channel": ch, "recipient": recipient, "status": "Delivered"})
+    conn.commit()
+    conn.close()
+    return results
+
+
+def notification_history(alert_id: str = None):
+    if alert_id:
+        return query_df("SELECT * FROM notification_log WHERE alert_id = ? ORDER BY sent_at DESC", [alert_id])
+    return query_df("SELECT * FROM notification_log ORDER BY sent_at DESC LIMIT 100")
