@@ -1,5 +1,6 @@
-import { NavLink, Outlet, useNavigate } from 'react-router-dom';
+import { NavLink, Outlet, useLocation, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
+import ErrorBoundary from '../components/ErrorBoundary';
 import {
   LayoutDashboard, FileWarning, ArrowLeftRight, Share2, MapPinned,
   Sparkles, Bell, BarChart3, Database, Info, ShieldCheck, Search, Radar, LogOut, Settings,
@@ -21,6 +22,7 @@ const NAV = [
 
 export default function AppLayout() {
   const navigate = useNavigate();
+  const location = useLocation();
   const [query, setQuery] = useState('');
 
   const runSearch = () => {
@@ -109,7 +111,9 @@ export default function AppLayout() {
         </header>
         <main className="flex-1 overflow-y-auto scanline-grid">
           <div className="p-6 max-w-[1600px] mx-auto">
-            <Outlet />
+            <ErrorBoundary key={location.pathname}>
+              <Outlet />
+            </ErrorBoundary>
           </div>
         </main>
       </div>

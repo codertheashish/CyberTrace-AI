@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { BarChart3, Target, CheckCircle } from 'lucide-react';
+import { BarChart3, Target, CheckCircle, AlertTriangle } from 'lucide-react';
 import { api } from '../services/api';
 import type { ModelMetrics } from '../types';
 
@@ -14,10 +14,23 @@ function MetricCard({ label, value, big }: { label: string; value: string; big?:
 
 export default function Analytics() {
   const [metrics, setMetrics] = useState<ModelMetrics | null>(null);
+  const [modelError, setModelError] = useState('');
   const [error, setError] = useState('');
 
   useEffect(() => {
-    api.modelMetrics().then(setMetrics).catch((e) => setError(e.message));
+    api
+      .modelMetrics()
+      .then((d) => {
+        // The backend returns {"error": "..."} with a 200 status when the
+        // model hasn't been trained yet (train_model.py not run) — handle
+        // that shape explicitly instead of assuming full metrics are present.
+        if (d && typeof d === 'object' && 'error' in d && !('top_3_location_accuracy' in d)) {
+          setModelError(d.error || 'Model metrics unavailable.');
+          return;
+        }
+        setMetrics(d);
+      })
+      .catch((e) => setError(e.message));
   }, []);
 
   return (
@@ -28,6 +41,22 @@ export default function Analytics() {
       </div>
 
       {error && <div className="text-rose-400 text-sm">{error}</div>}
+
+      {modelError && (
+        <div className="glass-panel rounded-xl p-5 flex items-start gap-3 border-orange-500/20">
+          <AlertTriangle size={18} className="text-orange-400 shrink-0 mt-0.5" />
+          <div>
+            <div className="text-sm text-white font-medium">Model not trained yet on this backend</div>
+            <p className="text-xs text-slate-400 mt-1">
+              The prediction model hasn't been generated on this deployment. Run{' '}
+              <code className="text-cyan-400 font-mono-tech">python ml/generate_dataset.py</code> then{' '}
+              <code className="text-cyan-400 font-mono-tech">python ml/train_model.py</code> on the backend
+              (or check your Render build logs — the build command should run both automatically).
+            </p>
+            <p className="text-[11px] text-slate-600 mt-2 font-mono-tech">Backend detail: {modelError}</p>
+          </div>
+        </div>
+      )}
 
       {metrics && (
         <>
@@ -52,13 +81,13 @@ export default function Analytics() {
               was selected and re-fit on train+validation before final test-set evaluation.
             </p>
             <div className="space-y-2">
-              {Object.entries(metrics.validation_scores).map(([name, score]) => (
+              {Object.entries(metrics.validation_scores || {}).map(([name, score]) => (
                 <div key={name} className="flex items-center gap-3 text-xs">
                   <span className="w-32 text-slate-400">{name}</span>
                   <div className="flex-1 h-2 bg-white/5 rounded-full overflow-hidden">
-                    <div className="h-full bg-cyan-500" style={{ width: `${score * 100}%` }} />
+                    <div className="h-full bg-cyan-500" style={{ width: `${(score as number) * 100}%` }} />
                   </div>
-                  <span className="w-14 text-right text-white font-mono-tech">{(score * 100).toFixed(1)}%</span>
+                  <span className="w-14 text-right text-white font-mono-tech">{((score as number) * 100).toFixed(1)}%</span>
                   {name === metrics.selected_model && <CheckCircle size={14} className="text-emerald-400" />}
                 </div>
               ))}
