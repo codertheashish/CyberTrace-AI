@@ -2,7 +2,7 @@ import { NavLink, Outlet, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import {
   LayoutDashboard, FileWarning, ArrowLeftRight, Share2, MapPinned,
-  Sparkles, Bell, BarChart3, Database, Info, ShieldCheck, Search, Radar, LogOut,
+  Sparkles, Bell, BarChart3, Database, Info, ShieldCheck, Search, Radar, LogOut, Settings,
 } from 'lucide-react';
 
 const NAV = [
@@ -16,6 +16,7 @@ const NAV = [
   { to: '/analytics', label: 'Analytics', icon: BarChart3 },
   { to: '/explorer', label: 'Data Explorer', icon: Database },
   { to: '/system', label: 'System Information', icon: Info },
+  { to: '/admin-settings', label: 'Admin Settings', icon: Settings },
 ];
 
 export default function AppLayout() {

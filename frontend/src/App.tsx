@@ -15,6 +15,7 @@ import Analytics from './pages/Analytics';
 import DataExplorer from './pages/DataExplorer';
 import SystemInfo from './pages/SystemInfo';
 import DemoMode from './pages/DemoMode';
+import AdminSettings from './pages/AdminSettings';
 
 export default function App() {
   return (
@@ -36,6 +37,7 @@ export default function App() {
             <Route path="/explorer" element={<DataExplorer />} />
             <Route path="/system" element={<SystemInfo />} />
             <Route path="/demo" element={<DemoMode />} />
+            <Route path="/admin-settings" element={<AdminSettings />} />
           </Route>
         </Route>
         <Route path="*" element={<Navigate to="/" replace />} />

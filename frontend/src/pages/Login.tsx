@@ -1,13 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { Radar, Lock, User, ShieldCheck, Terminal } from 'lucide-react';
-
-// Demo-only credential gate. This is a client-side check for UI/demo purposes —
-// it is NOT real authentication (anyone can read these values from the built
-// JS bundle). For a production deployment, replace this with a real backend
-// login endpoint that issues a session token.
-const VALID_USERNAME = import.meta.env.VITE_ADMIN_USERNAME || 'admin';
-const VALID_PASSWORD = import.meta.env.VITE_ADMIN_PASSWORD || 'cybertrace@2026';
+import { getCredentials } from '../utils/auth';
 
 const BOOT_LINES = [
   'INITIALIZING CYBERTRACE AI SECURE TERMINAL…',
@@ -37,7 +31,8 @@ export default function Login() {
       setError('Enter an investigator ID and access key to continue.');
       return;
     }
-    if (username.trim() !== VALID_USERNAME || password !== VALID_PASSWORD) {
+    const { username: validUser, password: validPass } = getCredentials();
+    if (username.trim() !== validUser || password !== validPass) {
       setError('ACCESS DENIED — invalid investigator ID or access key.');
       return;
     }
@@ -109,8 +104,7 @@ export default function Login() {
             </button>
 
             <p className="text-[10px] text-slate-600 text-center leading-relaxed pt-1">
-              Demo credentials: <span className="text-slate-400 font-mono-tech">admin / cybertrace@2026</span>
-              <br />(configurable via VITE_ADMIN_USERNAME / VITE_ADMIN_PASSWORD)
+              Authorized personnel only. Access is credential-gated.
             </p>
           </form>
         ) : (
