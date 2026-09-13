@@ -1,7 +1,6 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import AppLayout from './layouts/AppLayout';
 import RequireAuth from './components/RequireAuth';
-import Landing from './pages/Landing';
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
 import Complaints from './pages/Complaints';
@@ -21,7 +20,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Landing />} />
+        <Route path="/" element={<Login />} />
         <Route path="/login" element={<Login />} />
         <Route element={<RequireAuth />}>
           <Route element={<AppLayout />}>
