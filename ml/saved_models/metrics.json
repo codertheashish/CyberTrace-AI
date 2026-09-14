@@ -3,7 +3,7 @@
   "validation_scores": {
     "RandomForest": 0.7267,
     "GradientBoosting": 0.6584,
-    "XGBoost": 0.6584
+    "XGBoost": 0.6957
   },
   "test_accuracy": 0.7702,
   "test_precision_weighted": 0.7885,
