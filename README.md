@@ -245,3 +245,11 @@ would need hardening for real deployment:
 - SQLite is used for demo simplicity; see the schema for a straightforward
   PostgreSQL migration path (swap the connection layer in
   `backend/app/database/db.py`).
+
+
+## Team Name 
+
+### Ashish Kumar Prajapati (Leader)
+### Swayam Gupta
+### Sonali Gupta
+### Rajarshi Roop Sahani 

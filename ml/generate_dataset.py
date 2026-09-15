@@ -7,7 +7,7 @@ downstream ML model can actually learn structure from it.
 
 ALL DATA IS SYNTHETIC. No real people, accounts, or transactions are used.
 
-Outputs CSVs into backend/data/ :
+Outputs CSVs files into backend/data/ :
   - locations.csv
   - accounts.csv
   - complaints.csv

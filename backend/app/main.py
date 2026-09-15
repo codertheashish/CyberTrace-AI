@@ -11,7 +11,7 @@ logger = logging.getLogger("cybertrace")
 
 app = FastAPI(
     title="CyberTrace AI",
-    description="Predictive Cybercrime & Cash Withdrawal Intelligence Platform (synthetic-data demo)",
+    description="Predictive Cybercrime & Cash Withdrawal Intelligence Platform (Synthetic-Data Demo)",
     version="1.0.0",
 )
 
