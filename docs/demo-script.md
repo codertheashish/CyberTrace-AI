@@ -12,7 +12,7 @@ CyberTrace AI is built to forecast."
   possible cash-out points.
 - Manually tracing account chains and guessing likely ATMs doesn't scale.
 - Existing systems flag *that* fraud happened — not *where* the cash will
-  surface.
+  surfaces.
 
 ## 3. Introduce CyberTrace AI (20s)
 "CyberTrace AI takes a cybercrime complaint, traces the transaction network
